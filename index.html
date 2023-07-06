@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <title>Peanut Philharmonic</title>
+</head>
+<body>
+    <header class="header-area">
+        <!-- 導覽列 -->
+        <div class="navbar-area">
+          <div class="container">
+            <nav class="site-navbar">
+              <!--logo -->
+              <a href="index.html" class="logo"><img src="./image/logo.png" alt=""></a>
+      
+              <!-- site menu/nav -->
+              <ul>
+                <li><a href="calendars.html">Concert & Tickets</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="about.html">News</a></li>
+                <li><a href="support.html">Support Us</a></li>
+                <li><a href="sign.html">Sign in / Register</a></li>
+                
+              </ul>
+              <!-- hamburger -->
+              <button class="nav-toggler">
+                <span></span>
+              </button>
+            </nav>
+          </div>
+        </div>
+    </header>
+
+    <main style="margin-top: 93px;">
+        <!-- 首頁滿版大圖 -->
+        <div class="main-banner">
+            <img src="./image/main-banner.png" alt="">
+        </div>
+        
+        <!-- 最新演出資訊 -->
+        <div class="wrapper">
+            <div class="top-event">
+                <div class="top-image">
+                    <img data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" src="./image/top-image-1.jpg" alt="">
+                    <img data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine" src="./image/top-image-2.jpg" alt="">
+                </div>
+                <div class="top-text">
+                    <div class="h3-div">
+                        <h3>July 7-9</h3>
+                    </div>
+                    <h2>Alice Huang<br>
+                        The Portrait</h2>
+                    <p>Witness the seamless fusion of Alice Hunag’s mesmerizing vocals and the symphonic grandeur, creating an enchanting musical experience that transcends genres.</p>
+                    <div class="btn-div">
+                        <a href="tickets.html" class="btn-ticket">buy tickets</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bot-event">
+                <div class="bot-image">
+                    <img data-aos="fade-left"
+                    data-aos-offset="200"
+                    data-aos-easing="ease-in-sine" src="./image/bot-image-1.jpg" alt="">
+                    <img data-aos="fade-right"
+                    data-aos-offset="100"
+                    data-aos-easing="ease-in-sine" src="./image/bot-image-2.jpg" alt="">
+                </div>
+                <div class="bot-text">
+                    <div class="h3-div">
+                        <h3>July 30</h3>
+                    </div>
+                    <h2>Existence of<br>
+                        Absent Reality</h2>
+                    <p>Unleash auditory senses with Existence of Absent Reality's avant-garde compositions, redefining contemporary music.</p>
+                    <div class="btn-div">
+                        <a href="tickets.html" class="btn-ticket">buy tickets</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <!-- 輪播 -->
+        <div class="news-h1">
+            <h1>Latest News</h1>
+        </div>
+        <div #swiperRef="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <a href="news.html">
+                    <img src="./image/news-1.jpg" alt="">
+                    <h4>July 06, 2023</h4>
+                    <h4>The Only Moment</h4>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="news.html">
+                    <img src="./image/news-2.jpg" alt="">
+                    <h4>July 30, 2023</h4>
+                    <h4>Existence of Absent Reality</h4>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="news.html">
+                    <img src="./image/news-3.jpg" alt="">
+                    <h4>March 28, 2023</h4>
+                    <h4>Partnership with Orange</h4>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="news.html">
+                    <img src="./image/news-1.jpg" alt="">
+                    <h4>July 06, 2023</h4>
+                    <h4>The Only Moment</h4>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="news.html">
+                    <img src="./image/news-2.jpg" alt="">
+                    <h4>July 30, 2023</h4>
+                    <h4>Existence of Absent Reality</h4>
+                </a>
+            </div>
+            <div class="swiper-slide">
+                <a href="news.html">
+                    <img src="./image/news-3.jpg" alt="">
+                    <h4>March 28, 2023</h4>
+                    <h4>Partnership with Orange</h4>
+                </a>
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+
+    </main>
+    <footer>
+        <div class="black-footer">
+            <h1>STAY IN TOUCH</h1>
+            <a href="sign.html">Sign up for email updates</a>
+        </div>
+        <div class="footer">
+            <div class="left-side">
+                <h5>Peanut Philharmonic </h5>
+                <h5>follow us</h5>
+                <a href="#"><img src="./image/facebook-icon.png" alt=""></a>
+                <a href="#"><img src="./image/instagram-icon.png" alt=""></a>
+                <a href="#"><img src="./image/twitter-icon.png" alt=""></a>
+                <h6>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。</h6>
+            </div>
+
+            <div class="logo-side">
+                <a href="index.html"><img src="./image/logo.png" alt="" class="logo-bottom"></a>
+            </div>
+
+            <div class="right-side">
+                <ul>
+                    <li><a href="calendars.html">Calendar</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul>
+                    <li><a href="support.html">Support</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/index.js"></script>
+    <script src="./js/basic.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+    <script script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        centeredSlides: true,
+        spaceBetween: 30,
+        pagination: {
+            // el: ".swiper-pagination",
+            type: "fraction",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+    <script>
+        AOS.init({
+            offset: 50,
+            duration: 1000
+            });
+    </script>
+</body>
+</html>
