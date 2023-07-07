@@ -117,7 +117,7 @@ p{
     margin-right: auto;
     margin-left: auto;
     height: 310px;
-    /* border: 1px solid red; */
+
 }
 
 /* footer 左邊 */
@@ -132,10 +132,6 @@ p{
     color: #f2f2f2;
     line-height: 42px;
 }
-
-/* .left-side > h5:nth-child(3){
-    padding-top: 40px;
-} */
 
 .left-side > a{
     margin-right: 5px;
@@ -189,26 +185,13 @@ p{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* header */
 
 .container {
     width: 100%;
     max-width: 1680px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 1px 15px;
 }
 
 .header-area {
@@ -223,10 +206,7 @@ p{
 
     font-family: 'klavika-medium';
 }
-  /* default css end */
-  
-  
-  /* navbar regular css start */
+ 
   .navbar-area {
     background: rgba(0,0,0,.6);
     border-bottom: 1px solid #000;
@@ -262,13 +242,9 @@ p{
 .site-navbar ul li a:hover {
     border-bottom: 1px solid #f6f6f6;
 }
-  /* navbar regular css end */
 
 
 
-
-
-/* navbar regular css start */
 .navbar-area {
     background: #050505;
     border-bottom: 1px solid #000;
@@ -301,10 +277,9 @@ p{
   .site-navbar ul li a:hover {
     border-bottom: 1px solid #f6f6f6;
   }
-  /* navbar regular css end */
+ 
   
-  
-  /* nav-toggler css start */
+  /* 漢堡 */
   .nav-toggler {
     border: 3px solid #fff;
     padding: 5px;
@@ -340,10 +315,7 @@ p{
   .nav-toggler.toggler-open span:after {
     transform: translateY(-3px) rotate(-45deg);
   }
-  /* nav-toggler css start */
-  
-  
-  /* intro-area css start */
+
   .intro-area {
     height: calc(100vh - 61px);
     display: flex;
@@ -360,15 +332,15 @@ p{
   .intro-area p {
     font-size: 18px;
   }
-  /* intro-area css end */
-  
-  
-  /* mobile breakpoint start */
+ 
+
+
+
+  /* header rwd */
   @media screen and (max-width: 1080px) {
     .container {
       max-width: 1080px;
     }
-    /* navbar css for mobile start */
     .nav-toggler{
       display: block;
     }
@@ -408,6 +380,63 @@ p{
       font-size: 36px;
       margin-bottom: 15px;
     }  
-    /* navbar css for mobile end */
+
   }
-  /* mobile breakpoint end */
+
+  /* footer rwd */
+  @media only screen and (max-width: 1300px) {
+    .logo-bottom {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .right-side{
+      display: none;
+    }
+
+    .left-side {
+      position: absolute;
+      margin-top: 25px;
+      margin-left: 40px;
+      margin-bottom: 0;
+    }
+
+    .footer {
+      height: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 428px){
+    
+    .black-footer {
+      height: 360px;
+      background-color: #050505;
+      margin-top: 50px;
+      width: 100%;
+      max-width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .logo-side{
+        display :none;
+    }
+
+
+    .left-side {
+        position: absolute;
+        padding: 20px;
+        margin-top: auto; 
+        margin-left: auto;
+        margin-bottom: auto;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .footer{
+        height: 220px;
+  }
+  }

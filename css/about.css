@@ -31,32 +31,34 @@
     margin-bottom: 30px;
 }
 
-
-
 /* music-director 音樂總監頁面 */
 .music-director{
     padding-top: 155px;
     max-width: 1520px;
-    margin: 0 auto;
+    margin: 0 auto 150px auto;
     display: flex;
     border-bottom: 1px solid #050505;
+    
     padding-left: 100px;
     margin-bottom: 230px;
     box-sizing: border-box;
 }
 
 .music-director-img{
-    display: block;
-    margin-bottom: 20px;
     margin-left: auto;
-    margin-right: 100px;
-    max-width: 100%;
     order: 2;
 }
 
+.music-director img{
+    display: block;
+    max-width: 100%;
+    margin-bottom: 20px;
+
+}
+
 .music-director-text{
-    width: 480px;
-    margin-right: 100px;
+    width: 650px;
+    /* margin-right: 100px; */
     
     order: 1;
 }
@@ -95,4 +97,92 @@
 .musicians h4 a{
     font-family: 'Lato-Bold';
     color: #050505;
+}
+
+
+
+
+@media only screen and (max-width: 1300px){
+    .about-us{
+        display: block;
+    }
+
+    .about-us img{
+        margin: 0 auto;
+    }
+
+    .about-us-text {
+        padding-top: auto;
+        padding-bottom: auto;
+        width: auto;
+        margin: 0 auto;
+        padding: 100px;
+    }
+
+    .music-director{
+        display: block;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .music-director-img img{
+        width: auto;
+        margin: 0 auto;
+    }
+
+
+    .music-director-text{
+        padding: 100px;
+        width: auto;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .about-us{
+        padding-top: 94px;
+    }
+    .about-us-text{
+        margin: 30px;
+        padding: 0;
+    }
+
+    .music-director-text{
+        padding: 0;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 428px){
+    .about-us{
+        display: block;
+        padding-top: 94px;
+        margin-bottom: 50px;
+    }
+
+    .about-us-text{
+        width: auto;
+        margin: 30px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    
+    .music-director{
+        display: block;
+        padding: 30px;
+        margin-bottom: 50px;
+    }
+
+    .music-director-img{
+        margin: 0 auto;
+    }
+
+    .music-director-text{
+        width: auto;
+        margin-top: 30px;
+        margin-right: auto;
+        padding: 0;
+    }
 }

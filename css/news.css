@@ -5,14 +5,13 @@
 
 /* 新聞頁面 news*/
 
-  .news-wrapper{
+.news-wrapper{
     padding-top: 105px;
 }
 
 .news-top{
-    width: 950px;
+    max-width: 950px;
     padding: 50px;
-    /* border: 1px solid black; */
     margin: 0 auto;
 }
 
@@ -26,7 +25,7 @@
 }
 
 .news-top h4{
-    width: 800px;
+    max-width: 800px;
     margin-bottom: 75px;
 }
 
@@ -63,7 +62,7 @@
     font-size: 1.4rem;
     line-height: 2.1rem;
     letter-spacing: 0.8px;
-    width: 1100px;
+    max-block-size: 1100px;
     text-align: left;
     margin: 0 auto;
 
@@ -75,7 +74,7 @@
 
 /* 下方新聞欄位 */
 .news-bottom{
-    width: 1200px;
+    max-width: 1200px;
     margin: 125px auto 0 auto;
     padding: 50px 150px;
     border: 1px solid black;
@@ -154,4 +153,140 @@
 
 
     font-family: 'Lato-Regular';
+}
+   
+
+
+
+/* 最新新聞 */
+
+.news-h1{
+    margin-left: 8%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+
+.swiper {
+    max-width: 1350px;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide h4{
+    padding-top: 10px;
+    padding-left: 15px;
+    color: #999191;
+}
+
+.swiper-slide h4:last-child{
+    margin: 15px 0 15px 0;
+    padding-left: 15px;
+    color: #050505;
+
+    font-family: "RobotoSlab-Bold";
+}
+
+.swiper-slide a{
+    text-decoration: none;
+    text-align: left;
+}
+
+@media only screen and (max-width: 1010px) {
+    .second-para {
+        display: block;
+        margin-top: 80px;
+        
+    }
+
+    .second-para img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .second-para p{
+        margin-top: 30px;
+        margin-left: auto;
+        width: auto;
+    }
+    
+    .photo-by-2{
+        display: none;
+    }
+
+    .third-para {
+        display: block;
+        margin-top: 10px;
+        
+    }
+
+    .third-para img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .third-para p{
+        margin-top: 50px;
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: auto;
+    }
+    
+    .photo-by-3{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .news-top{
+        padding-top: 20px;
+    }
+    .news-top h1{
+        font-size: 4.2rem;
+    }
+
+    .news-top h3{
+        font-size: 3rem;
+    }
+
+    .news-top h4{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 25px;
+    }
+    .news-bottom {
+        padding: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 428px){
+
+    .first-para h4{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .news-bottom{
+        padding: 15px;
+        margin-top: 30px;
+    }
+    
+
+    
+    
 }

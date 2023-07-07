@@ -22,12 +22,10 @@
 }
 
 .loginsite{
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     padding-top: 150px;
-    width: 660px;
-    /* border: 1px solid black; */
+    max-width: 660px;
     margin : 0 auto;
     font-family: "RobotoSlab-Bold";
 }
@@ -39,7 +37,7 @@
 
 .email-address, .password{
     font-size: 24px;
-    width: 650px;
+    max-width: 650px;
     height: 60px;
 }
 
@@ -62,4 +60,19 @@
 
 .btn-login:hover{
     background-color: #B1966A;
+}
+
+
+@media only screen and (max-width: 750px){
+    .loginsite{
+        padding-top: 35px;
+        margin: 30px ;
+    }
+}
+
+
+@media only screen and (max-width: 428px){
+    .loginsite{
+        margin: 10px;
+    }
 }

@@ -76,6 +76,16 @@
     width: 300px;
 }
 
+.calendar-day-2{
+    font-size: 4.2rem;
+    font-family: 'RobotoSlab-Regular';
+    color: #666;
+    align-self: center;
+    text-align: center;
+    width: 300px;
+    display: none;
+}
+
 .info-wrapper{
     /* border: 1px solid black; */
     width: 70%;
@@ -170,4 +180,113 @@
     background-color: #afadad ;
 }
 
+
+@media only screen and (max-width: 428px){
+
+    h1 {
+        font-size: 3.6rem;
+        color: #050505;
+        font-family: "RobotoSlab-Bold";
+    }
+
+    h4{
+        font-size: 1.4rem;
+        color: #050505;
+        line-height: 2.1rem;
+
+        font-family: 'Lato-Regular';
+    }
+    .search {
+        display: flex;
+        justify-content: space-around;
+        width: auto;
+    }
+    .btn-search {
+        margin-top: 50px;
+        width: 180px;
+    }
+    
+    .calendar-h1{
+        padding-top: 135px;
+        text-align: center;
+    }
+
+    .calendar {
+        display: block;
+    }
+
+    .calendar-image img{
+        width: 100%;
+    }
+
+    .calendar-day {
+        display: none;
+    }
+    .calendar-day-2{
+        font-size: 3.6rem;
+        display: block;
+        text-align:start ;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .info-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 35px;
+    }
+
+    .btn-read-more {
+        line-height: 4.5rem;
+    }
+
+    .button-wrapper{
+        margin-top: 20px;
+    }
+
+    .btn-ticket{
+        margin: auto;
+        line-height: 4.5rem;
+    }
+}
+
+@media only screen and (max-width: 1150px){
+    .calendar {
+        display: block;
+    }
+
+    .calendar-image img{
+        width: 100%;
+    }
+
+    .calendar-day {
+        display: none;
+    }
+    .calendar-day-2{
+        font-size: 3.6rem;
+        display: block;
+        text-align:start ;
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .info-wrapper {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 35px;
+    }
+
+    .btn-read-more {
+        line-height: 4.5rem;
+    }
+
+    .button-wrapper{
+        margin-top: 20px;
+    }
+
+    .btn-ticket{
+        margin: auto;
+        line-height: 4.5rem;
+    }
+}
 

@@ -18,14 +18,11 @@
 
 .support-text{
     padding: 105px 0 105px 0;
-    width: 918px;
+    max-width: 918px;
     margin: 0 auto;
     letter-spacing: 0.5px;
 }
 
-.support-text h4{
-
-}
 
 .support-way{
     background-color: #C9B28D;
@@ -265,4 +262,33 @@
     right: 80px;
     bottom: -110px;
 
+}
+
+
+
+
+
+@media only screen and (max-width: 980px) {
+    .support-text {
+        padding: 30px;
+        max-width: 918px;
+        margin: 0 auto;
+        letter-spacing: 0.5px;
+    }
+
+    h4{
+        font-size: 2rem;
+    }
+    
+    .support-way h2{
+        font-size: 3.6rem;
+    }
+
+    .one-off-support li{
+        font-size: 2rem;
+    }
+
+    .member-support li{
+        font-size: 2rem;
+    }
 }
