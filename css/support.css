@@ -534,8 +534,8 @@
 
     .donation-1{
         font-size: 1.6rem;
-        padding: 30px;
-        margin: 270px 10px 50px 10px;
+        padding: 20px;
+        margin: 150px 10px 50px 10px;
 
     }
 
@@ -563,12 +563,32 @@
     }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 428px){
     .support-way h2{
         font-size: 2.4rem;
     }
 
     .one-off-support h2 {
         font-size: 2.4rem;
+    }
+
+    .donation-1 {
+        padding: 0px;
+    }
+
+    .btn-donation-1 {
+        width: 130px;
+    }
+
+    .btn-donation-2 {
+        width: 130px;
+    }
+
+    div.cards{
+        padding-left: 10px;
+    }
+
+    .donation-1 input[type="text"]{
+        width: 145px;
     }
 }

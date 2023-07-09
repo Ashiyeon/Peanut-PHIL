@@ -230,6 +230,10 @@ p{
     align-items: center;
     margin-right: 20px;
 }
+
+.site-navbar li:last-child{
+  display: none;
+}
   
 .site-navbar ul li a {
     color: #fff;
@@ -344,6 +348,9 @@ p{
     .nav-toggler{
       display: block;
     }
+    .site-navbar li:last-child{
+      display: block;
+    }
     .site-navbar {
       min-height: 60px;
     }
@@ -439,4 +446,4 @@ p{
     .footer{
         height: 220px;
   }
-  }
+}

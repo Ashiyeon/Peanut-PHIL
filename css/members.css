@@ -46,6 +46,7 @@
     flex: 1;
     font-size: 2.4rem;
     font-family: 'RobotoSlab-Medium';
+    cursor: pointer;
 }
 
 .members i{
@@ -58,8 +59,13 @@
 }
 
 .members-wrapper h2{
-    padding-top: 150px;
+    padding-top: 200px;
 }
+
+#violin2, #violas2, #cellos2, #basses2{
+    color: #EEEEED;
+}
+
 
 .artist{
     display: flex;
@@ -74,6 +80,7 @@
 
 .artist img{
     transition: all 0.4s;
+    width: 100%;
     
 }
 
@@ -90,6 +97,58 @@
     height: 1px;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1450px) {
+    .artist {
+        justify-content: space-between;
+    }
+    .artist li {
+        flex-basis: calc(33% - 10px); 
+    }
+}
+@media (max-width: 1450px){
+    .members li{
+        font-size: 2rem;
+    }
+}
 
+@media (max-width: 800px){
+    .members li{
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 800px){
+    .members{
+        position: static;
+    }
+}
+
+@media screen and (max-width: 428px) {
+
+    .orchestra{
+        font-size: 3.2rem;
+        margin: 0;
+        text-align: center;
+    }
+
+    .members li{
+        display: flex;
+        width: 100%;
+        font-size: 1.4rem;
+        
+        margin-top: 0px;
+        padding-bottom: 20px;
+    }
+
+    .members-wrapper h2 {
+        padding-top: 20px;
+        font-size: 3.2rem;
+    }
+
+    .artist {
+        justify-content: space-between;
+    }
+    .artist li {
+        flex-basis: calc(50% - 10px); 
+    }
 }

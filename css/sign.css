@@ -75,4 +75,10 @@
     .loginsite{
         margin: 10px;
     }
+    .account h2{
+        font-size: 3.6rem;
+    }
+    h1 {
+        font-size: 4.2rem;
+    }
 }

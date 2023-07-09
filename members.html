@@ -37,12 +37,14 @@
 
     <main>
         <h2 class="orchestra">The Orchestra</h2>
+        
+        
         <div class="members" id ="members">
             <ul>
                 <li id="violin"><i class="fa-sharp fa-solid fa-arrow-down"></i>Violin</li>
-                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Violas</li>
-                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Cellos</li>
-                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Basses</li>
+                <li id="violas"><i class="fa-sharp fa-solid fa-arrow-down"></i>Violas</li>
+                <li id="cellos"><i class="fa-sharp fa-solid fa-arrow-down"></i>Cellos</li>
+                <li id="basses"><i class="fa-sharp fa-solid fa-arrow-down"></i>Basses</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Timpani</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Harp</li>
             </ul>
@@ -50,7 +52,7 @@
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Flutes</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Oboes</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Horns</li>
-                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Trumpets</li><li><i class="fa-sharp fa-solid fa-arrow-down"></i>Cellos</li>
+                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Piano</li><li><i class="fa-sharp fa-solid fa-arrow-down"></i>Cellos</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Tuba</li>
             </ul>
             
@@ -58,8 +60,8 @@
 
         
         <section class="members-wrapper">
-            
-            <h2 id="violin2">Violin</h2>
+            <span id="violin2">_</span>
+            <h2>Violin</h2>
             <ul class="artist">
 
                 <li>
@@ -105,12 +107,12 @@
             </ul>
 
             
-
         </section>
         
         <section class="members-wrapper">
-            
+            <span id="violas2">_</span>
             <h2>Violas</h2>
+
             <ul class="artist">
 
                 <li>
@@ -151,7 +153,7 @@
         </section>
 
         <section class="members-wrapper">
-            
+            <span id="cellos2">_</span>
             <h2>Cellos</h2>
             <ul class="artist">
 
@@ -193,7 +195,7 @@
         </section>
 
         <section class="members-wrapper">
-            
+            <span id="basses2">_</span>
             <h2>Basses</h2>
             <ul class="artist">
 
@@ -277,17 +279,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         $(document).ready(function() {
-            var winHeight = $(window).height();
+            $('#violin').click(function() {
+                var targetOffset = $('#violin2').offset().top;
+                $('html, body').animate({ scrollTop: targetOffset }, 'slow');
+            });
 
-            console.log("Window height is: " + winHeight);
+            $('#violas').click(function() {
+                var targetOffset = $('#violas2').offset().top;
+                $('html, body').animate({ scrollTop: targetOffset }, 'slow');
+            });
+
+            $('#cellos').click(function() {
+                var targetOffset = $('#cellos2').offset().top;
+                $('html, body').animate({ scrollTop: targetOffset }, 'slow');
+            });
+
+            $('#basses').click(function() {
+                var targetOffset = $('#basses2').offset().top;
+                $('html, body').animate({ scrollTop: targetOffset }, 'slow');
+            });
         });
 
 
-        var violin = document.querySelector('#violin');
-        $("#violin").click(function() {
-            $('html,body').animate({
-                scrollTop: $("#violin2").offset().top});
-        });
 
     </script>
 </body>

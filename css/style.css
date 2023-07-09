@@ -11,10 +11,6 @@
 }
   
 .main-banner img{
-    /* max-width: 100%;
-    height: 100vh;
-    display: block;
-    object-fit: cover; */
 
     position: absolute;
     top: 0;
@@ -27,7 +23,6 @@
 /* 最新演出資訊 */
 .wrapper{
     max-width: 100%;
-    /* border: 1px solid red; */
     margin: 0 auto;
 }
 
@@ -239,16 +234,67 @@
 
 
 /* Mobile Styles */
-@media only screen and (max-width: 1200px) {
+
+@media only screen and (max-width: 1300px) {
+    .top-event{
+        display: block;
+    }
+
+    .top-image {
+        width: 60%;
+        /* margin-left: 150px; */
+        position: relative;
+        margin: 0 auto;
+    }
+    .top-image img:last-child {
+        display: none;
+    }
+
+    .top-image img:first-child{
+        position: static;
+    }
+
+    .top-text {
+        height: auto;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .h3-div {
+        border-top: none;
+        padding-top: 50px;
+    }
+
+
+
+
+    .bot-event{
+        display: block;
+    }
+
+    .bot-image {
+        width: 60%;
+        /* margin-left: 150px; */
+        position: relative;
+        margin: 0 auto;
+    }
+    .bot-image img:last-child {
+        display: none;
+    }
+
+    .bot-image img:first-child{
+        position: static;
+    }
+
+    .bot-text {
+        height: auto;
+        padding: 20px;
+        width: 50%;
+        margin: 0 auto;
+    }
 
 }
-
-
-@media only screen and (max-width: 768px) {
-    
-}
-
-
 
 
 @media only screen and (max-width: 428px) {
@@ -417,65 +463,4 @@
     .swiper-slide a{
         display: block;
     }
-}
-
-@media only screen and (max-width: 1300px) {
-    .top-event{
-        display: block;
-    }
-
-    .top-image {
-        width: 60%;
-        /* margin-left: 150px; */
-        position: relative;
-        margin: 0 auto;
-    }
-    .top-image img:last-child {
-        display: none;
-    }
-
-    .top-image img:first-child{
-        position: static;
-    }
-
-    .top-text {
-        height: 605px;
-        padding: 20px;
-        width: 50%;
-        margin: 0 auto;
-    }
-
-    .h3-div {
-        border-top: none;
-        padding-top: 50px;
-    }
-
-
-
-
-    .bot-event{
-        display: block;
-    }
-
-    .bot-image {
-        width: 60%;
-        /* margin-left: 150px; */
-        position: relative;
-        margin: 0 auto;
-    }
-    .bot-image img:last-child {
-        display: none;
-    }
-
-    .bot-image img:first-child{
-        position: static;
-    }
-
-    .bot-text {
-        height: 605px;
-        padding: 20px;
-        width: 50%;
-        margin: 0 auto;
-    }
-
 }
