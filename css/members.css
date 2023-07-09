@@ -8,24 +8,42 @@
 
 .orchestra{
     padding-top: 105px;
+    margin-left: 50px;
 }
 
 .members{
     max-width: 1530px;
     margin: 0 auto;
+    position: sticky;
+    top: 60px;
+    background-color: #EEEEED;
+    z-index: 9;
+    border: 1px solid #EEEEED;
+    border-bottom: 1px solid black;
+    box-sizing: border-box;
 }
+
 
 .members ul{
     display: flex;
     width: 100%;
-    border-bottom: 1px solid black;
+    
     margin-top: 55px;
     padding-bottom: 20px;
-
     justify-content: space-between;
+
+}
+
+.members ul:last-child{
+    display: flex;
+    width: 100%;
+    
+    margin-top: 5px;
+    padding-bottom: 20px;
 }
 
 .members li{
+    flex: 1;
     font-size: 2.4rem;
     font-family: 'RobotoSlab-Medium';
 }
@@ -37,7 +55,6 @@
 .members-wrapper{
     width: 80%;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .members-wrapper h2{
@@ -67,4 +84,12 @@
 .artist h4{
     padding-top: 10px;
     
+}
+
+#violin{
+    height: 1px;
+}
+
+@media (max-width: 1400px) {
+
 }

@@ -68,7 +68,7 @@
 }
 
 .donation{
-    /* background-image: url("../image/donation-bg.png"); */
+    background-image: url("../image/donation-bg.png");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -86,20 +86,26 @@
 
 
 .donation-1{
-    width: 670px;
+    box-sizing: border-box;
+    max-width: 670px;
     height: 664px;
     background-color: rgba(217, 217, 217, 0.9);
 
+
     margin: 270px 100px 100px 100px;
 
+    padding: 0 50px 50px 50px;
+
     
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .btn-donation-1{
     width: 210px;
     height: 60px;
     margin-top: 80px;
+
+
     
     border: 1px solid #987D50;
     background-color: #987D50;
@@ -128,6 +134,8 @@
     display: flex;
     justify-content: center;
     align-items: center; 
+
+
 }
 
 
@@ -160,14 +168,76 @@
     align-items: center; 
 }
 
+.amount{
+    margin-top: 50px;
+}
+
+.amount input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+.amount label{
+    margin-right: 20px;
+}
+
+.amount-1{
+    margin-top: 20px;
+}
+
+
+.amount-1 input[type="radio"]{
+    width: 20px;
+    height: 20px;
+}
+
+.amount-1 input[type="text"]{
+    width: 160px;
+    height: 30px;
+    font-size: 1.8rem;
+}
 .name{
     display: flex;
+    justify-content:flex-start;
+    margin-top: 30px;
+    padding-left: 5px;
+}
+
+.name input[type="text"]{
+    width: 160px;
+    height: 30px;
+    font-size: 1.8rem;
+}
+
+.first-name{
+    margin-right: 30px;
 }
 
 .first-name label, .last-name label, .first-name input, .last-name input{
     display: block;
 }
 
+.cards{
+    display: flex;
+    margin-top: 30px;
+}
+
+.cards input[type="text"]{
+    width: 160px;
+    height: 30px;
+    font-size: 1.8rem;
+}
+
+.DoE2{
+    display: flex;
+}
+.DoE2 input[type="text"]{
+    width: 70px;
+}
+
+.donation-1 .btn-ticket{
+    
+    margin-top: 50px;
+}
 
 
 /* .donation-page-1{
@@ -271,8 +341,7 @@
 }
 
 .donation-amount input[type="radio"] {
-    width: 20px;
-    height: 20px;
+
     margin-right: 10px;
 }
 
@@ -411,5 +480,95 @@
 
     .member-support li{
         font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 880px){
+    .cards{
+        display: block;
+    }
+
+    .DoE{
+        margin-top: 10px;
+    }
+
+    .CCV{
+        margin-top: 10px;
+    }
+
+    .CCV input[type="text"]{
+        margin-left: 56px;
+        margin-bottom: 30px;
+    }
+    .donation-1 .btn-ticket{   
+
+       margin: auto;
+    }
+
+    .donation-1{
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .donation-1 {
+        margin-bottom: 150px;
+    }
+
+    
+    .support-way {
+        padding: 30px;
+    }
+    
+    h4{
+        font-size: 1.6rem;
+    }
+    
+    .support-way h2{
+        font-size: 2.6rem;
+    }
+
+    .one-off-support h2 {
+        margin-left: 0px;
+    }
+
+    .donation-1{
+        font-size: 1.6rem;
+        padding: 30px;
+        margin: 270px 10px 50px 10px;
+
+    }
+
+    .one-off-support li{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .member-support li{
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+    }
+
+    .btn-donation-1 {
+        width: 150px;
+    }
+
+    .btn-donation-2 {
+        width: 150px;
+    }
+
+    .CCV input[type="text"]{
+        margin-left: 36px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .support-way h2{
+        font-size: 2.4rem;
+    }
+
+    .one-off-support h2 {
+        font-size: 2.4rem;
     }
 }

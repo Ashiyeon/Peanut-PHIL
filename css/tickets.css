@@ -57,7 +57,8 @@
 
 
 .tickets-top{
-    
+    display: flex;
+    max-width: 100%;
     margin-bottom: 120px;
 }
 
@@ -91,22 +92,18 @@
 .tickets-top p{
     font-size: 2rem;
     line-height: 3rem;
-    width: 685px;
 }
 
 
 .tickets-left{
-    display: flex;
-    justify-content: space-between;
     align-items: start;
+    max-width: 50%;
 }
 .tickets-content{
-    flex-basis: 50%;
-    /* border: 1px solid red; */
 }
 
 .tickets-info{
-    height: 280px;
+    /* height: 280px; */
     width: 85%;
     padding: 40px;
     margin-left: 30px;
@@ -136,7 +133,7 @@
   
 .tickets-sell {
     display: flex;
-    width: 1470px;
+    max-width: 1470px;
     height: 170px;
     align-items: center;
     margin: 0 auto;
@@ -147,7 +144,6 @@
   
   .tickets-sell .btn-ticket {
     margin:0;
-    /* margin-left: 50px; */
   }
   
   .tickets-sell li {
@@ -164,3 +160,98 @@
     font-weight: bold;
   }
 
+
+
+  @media only screen and (max-width: 1200px){
+    .tickets-top h2 {
+      padding-top: 100px;
+      margin-left: 100px;
+      font-size: 4.2em;
+    }
+
+    .tickets-top h1 {
+      margin: 10px 0 85px 100px;
+      font-size: 5.2rem;
+    }
+    
+    .tickets-sell li{
+      font-size: 2rem;
+    }
+  }
+
+
+
+
+
+  @media only screen and (max-width: 920px){
+    .tickets-sell {
+      display: block;
+      width: auto;
+      height: auto;
+    }
+    .tickets-sell .btn-ticket {
+      margin: 0 auto;
+    }
+
+    .tickets-left h5{
+      width: 400px;
+      padding-left: 10px;
+    }
+
+    .tickets-top h2 {
+      padding-top: 50px;
+      margin-left: 50px;
+      font-size: 4.2em;
+    }
+
+    .tickets-top h1 {
+      margin: 10px 0 85px 50px;
+      font-size: 5.2rem;
+    }
+    .tickets-sell li:nth-child(2){
+      display : none;
+    }    
+    
+    .btn-ticket {
+      width: 150px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 750px){
+    .tickets-top{
+      display: block;
+    }
+
+    .tickets-left{
+      align-items: start;
+      max-width: 100%;
+    }
+    .tickets-info{
+      margin: auto;
+    }
+
+  }
+
+  @media only screen and (max-width: 428px){
+    .tickets-top h2 {
+      padding-top: 50px;
+      margin-left: 50px;
+      font-size: 2.8em;
+    }
+
+    .tickets-top h1 {
+      margin: 10px 0 55px 50px;
+      font-size: 3.2rem;
+    }
+
+    .tickets-top h4{
+      margin-bottom: 20px;
+  
+      font-size: 2.4rem;
+    }
+
+    .tickets-left h5{
+      padding-top: 80px;
+    }
+  }

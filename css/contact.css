@@ -14,7 +14,7 @@
 }
 
 .contact-text{
-    width: 480px;
+    max-width: 480px;
     padding-left: 20px;
     
     /* border: 1px solid red; */
@@ -34,7 +34,7 @@
 
 .contact-container{
 
-    width: 1400px;
+    max-width: 1400px;
     display: flex;
     margin: 180px auto 0 auto;
 
@@ -45,7 +45,7 @@
 
 
 .contact-form{
-    width: 760px;
+    max-width: 760px;
     /* border: 1px solid green; */
 }
 
@@ -90,4 +90,45 @@
 
 .contact-form .btn-ticket{
     margin-top: 30px;
+}
+
+
+
+@media only screen and (max-width: 1300px){
+    
+    .contact-form input{
+        width: 100%;
+    }
+
+    .contact-form input:first-child{
+        width: 100%;
+    }
+
+
+    #textarea{
+        width: 100%;
+    }
+
+    .contact-form select{
+        width: calc(100% + 8px);        
+    }
+    .contact-container{
+        justify-content:space-around
+    }
+}
+
+@media only screen and (max-width: 930px){
+    .contact-container{
+        display: block;
+        margin: 50px 50px
+    }   
+
+    .contact-text{
+        margin-bottom: 30px;
+        padding-left: 0;
+    }
+    
+    .contact-text p{
+        font-size: 2rem;
+    }
 }

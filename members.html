@@ -39,21 +39,27 @@
         <h2 class="orchestra">The Orchestra</h2>
         <div class="members" id ="members">
             <ul>
-                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Violin</li>
+                <li id="violin"><i class="fa-sharp fa-solid fa-arrow-down"></i>Violin</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Violas</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Cellos</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Basses</li>
+                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Timpani</li>
+                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Harp</li>
+            </ul>
+            <ul>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Flutes</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Oboes</li>
                 <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Horns</li>
-                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Trumpets</li>
+                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Trumpets</li><li><i class="fa-sharp fa-solid fa-arrow-down"></i>Cellos</li>
+                <li><i class="fa-sharp fa-solid fa-arrow-down"></i>Tuba</li>
             </ul>
+            
         </div>
 
         
         <section class="members-wrapper">
             
-            <h2>Violin</h2>
+            <h2 id="violin2">Violin</h2>
             <ul class="artist">
 
                 <li>
@@ -267,6 +273,22 @@
             </div>
         </div>
     </footer>
+    <script src="./js/basic.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(document).ready(function() {
+            var winHeight = $(window).height();
+
+            console.log("Window height is: " + winHeight);
+        });
+
+
+        var violin = document.querySelector('#violin');
+        $("#violin").click(function() {
+            $('html,body').animate({
+                scrollTop: $("#violin2").offset().top});
+        });
+
+    </script>
 </body>
 </html>
