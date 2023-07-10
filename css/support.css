@@ -69,6 +69,7 @@
 
 .donation{
     background-image: url("../image/donation-bg.png");
+    /* background-image: url("../image/donation-bg-1.png"); */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -80,9 +81,10 @@
     font-family: "RobotoSlab-Bold";
     font-size: 2.4rem;
     line-height: 3.6rem;
-
     margin-bottom: -150px;
 }
+
+
 
 
 .donation-1{
@@ -564,6 +566,7 @@
 }
 
 @media only screen and (max-width: 428px){
+    
     .support-way h2{
         font-size: 2.4rem;
     }
@@ -591,4 +594,9 @@
     .donation-1 input[type="text"]{
         width: 145px;
     }
+
+    .donation{
+        background-image: url("../image/donation-bg-1.png");
+    }
+    
 }

@@ -193,7 +193,7 @@
       margin: 0 auto;
     }
 
-    .tickets-left h5{
+    .tickets-top h5{
       width: 400px;
       padding-left: 10px;
     }
@@ -251,7 +251,7 @@
       font-size: 2.4rem;
     }
 
-    .tickets-left h5{
-      padding-top: 80px;
+    .tickets-top h5{
+      display: none;
     }
   }

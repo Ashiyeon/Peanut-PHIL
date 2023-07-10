@@ -132,3 +132,16 @@
         font-size: 2rem;
     }
 }
+
+@media only screen and (max-width: 428px){
+
+    .contact-container{
+        display: block;
+        margin: 15px 15px
+    }  
+
+    .contact-form{
+        padding-left: 20px;
+    }
+
+}
