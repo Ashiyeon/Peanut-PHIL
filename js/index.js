@@ -16,7 +16,7 @@
 //滿版圖鎖屏
 
 let scrollDistance = 0;
-const targetScroll = 400;
+const targetScroll = 450;
 const targetElement = document.querySelector('.top-event');
 
 // 事件監聽函數

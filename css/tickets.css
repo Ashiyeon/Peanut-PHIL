@@ -113,7 +113,6 @@
 
 
 .tickets-img{
-    display: block; 
     margin-top: 105px;
     
     flex-basis: 50%;
@@ -121,6 +120,7 @@
 }
 .tickets-img img{
     width: 100%;
+    display: block; 
 }
 
 
@@ -238,6 +238,11 @@
       padding-top: 50px;
       margin-left: 50px;
       font-size: 2.8em;
+    }
+
+    .tickets-info{
+      width: 85%;
+      padding: 25px;
     }
 
     .tickets-top h1 {

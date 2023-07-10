@@ -41,7 +41,7 @@
 
 .top-image img:first-child{
     position: absolute;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .top-image img:last-child{
