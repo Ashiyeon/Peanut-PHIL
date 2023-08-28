@@ -1,0 +1,52 @@
+body {
+    color: #7B1FA2;
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #6A1B9A;
+    background-repeat: no-repeat;
+}
+
+.card {
+    width: 400px;
+    background-color: #F3E5F5;
+}
+
+.block {
+    width: 20%;
+    background-color: #E1BEE7;
+    cursor: pointer;
+    padding: 10px 0px;
+}
+
+.first-block {
+    border-bottom-left-radius: 5px;
+}
+
+.last-block {
+    border-bottom-right-radius: 5px;
+}
+
+.block.active,
+.block:hover {
+    background-color: #CE93D8;
+}
+
+.city-symbol {
+    width: 200px;
+    height: 250px;
+}
+
+.large-font {
+    font-size: 60px;
+}
+
+.symbol-img {
+    width: 40px;
+    height: 40px;
+}
+
+@media screen and (max-width: 400px) {
+    .card {
+        width: 92%;
+    }
+}

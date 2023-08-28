@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/weather.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div id="app" class="container px-1 px-sm-4 py-5 mx-auto">
+        <div class="row d-flex justify-content-center">
+            <div class="card text-center pt-4 border-0">
+                <h4 id="city_name" class="mb-0">Moscow</h4>
+                <small id="district" class="text-muted mb-3">Red Square</small>
+                <h2 id="tempture" class="large-font">-32&#176;</h2>
+                <div class="text-center mt-3 mb-4">
+                    <img class="city-symbol" src="https://i.imgur.com/QA63I0q.png">
+                </div>
+                <div id="weekday" class="row d-flex px-3 mt-auto">
+                    <div class="d-flex flex-column block first-block">
+                        <small class="text-muted mb-0">MON</small>
+                        <div class="text-center"><img class="symbol-img" src="https://i.imgur.com/BeWfUuG.png"></div>
+                        <h6><strong>-30&#176;</strong></h6>
+                    </div>
+                    <div class="d-flex flex-column block">
+                        <small class="text-muted mb-0">TUE</small>
+                        <div class="text-center"><img class="symbol-img" src="https://i.imgur.com/Shrg84B.png"></div>
+                        <h6><strong>-29&#176;</strong></h6>
+                    </div>
+                    <div class="d-flex flex-column block">
+                        <small class="text-muted mb-0">WED</small>
+                        <div class="text-center"><img class="symbol-img" src="https://i.imgur.com/Shrg84B.png"></div>
+                        <h6><strong>-34&#176;</strong></h6>
+                    </div>
+                    <div class="d-flex flex-column block">
+                        <small class="text-muted mb-0">THU</small>
+                        <div class="text-center"><img class="symbol-img" src="https://i.imgur.com/BeWfUuG.png"></div>
+                        <h6><strong>-30&#176;</strong></h6>
+                    </div>
+                    <div class="d-flex flex-column block last-block">
+                        <small class="text-muted mb-0">FRI</small>
+                        <div class="text-center"><img class="symbol-img" src="https://i.imgur.com/BeWfUuG.png"></div>
+                        <h6><strong>-30&#176;</strong></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.45/vue.global.prod.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.2/axios.min.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

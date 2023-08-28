@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google地圖測試</title>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <style>
+        #map{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h1>台北市政府地圖</h1>
+    <div id="map"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDlWDn1_cVGdVzvU2ddsTJ81-9BOTflz4k&callback=initMap">
+</script>
+
+<script>
+    // Initialize and add the map
+const locations = [
+  { lat: 25.034393946294266, lng: 121.56478920337617 },
+  { lat: 25.03330520022631, lng: 121.58993759284304 },
+  { lat: 25.04080957511679, lng: 121.56002560059703 },
+  { lat: 25.039673175009867, lng: 121.56414352346185 },
+  { lat: 25.031594293961863, lng: 121.5542320296024 }
+];
+function initMap() {
+  // The location of Uluru
+  const cityhall = { lat: 25.039673175009867, lng: 121.56414352346185 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 15,
+    center: cityhall,
+  });
+  
+  const labels = ["台北101","虎山生態步道","國父紀念館","台北市政府","臨江街觀光夜市"];
+  const marker_labels = "ABCDE";
+  const markers = locations.map((position, i) => {
+    const label = marker_labels[i];
+    const marker = new google.maps.Marker({
+      position,
+      label,
+      icon: "img/placeholder.png"
+    });
+    const infoWindow = new google.maps.InfoWindow({
+        content: "",
+        disableAutoPan: true,
+    });
+    marker.addListener("click", () => {
+      infoWindow.setContent(labels[i]);
+      infoWindow.open(map, marker);
+    });
+    return marker;
+  });
+  const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+}
+
+window.initMap = initMap;
+</script>
+</body>
+</html>

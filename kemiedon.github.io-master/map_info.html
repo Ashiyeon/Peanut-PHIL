@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Simple Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style>
+        #map{
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+
+    <!-- prettier-ignore -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5_SjUbRXayyiYVb9QaQSlRUW6CSM5Io&callback=initMap"></script>
+    <script>
+        function initMap() {
+            
+                // The location of Uluru
+                const cityhall = { lat:25.0488079, lng: 121.456582 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 18,
+                    center: cityhall,
+                });
+                const contentString = "<a href='https://www.youtube.com/watch?v=xMbOOc7iH1I&t=49s%27%3E&ab_channel=EricDuan'><h1>山道猴子</h1></a>"
+                const infowindow = new google.maps.InfoWindow({
+                    content: contentString,
+                    ariaLabel: "Uluru",
+                });
+
+                const marker = new google.maps.Marker({
+                    position: cityhall,
+                    map: map,
+                    title: "XDDDDDDD"
+                });
+                marker.addListener("click", () => {
+                    infowindow.open({
+                    anchor: marker,
+                    map,
+                    });
+                });
+            }
+            window.initMap = initMap;
+    </script>
+  </body>
+</html>

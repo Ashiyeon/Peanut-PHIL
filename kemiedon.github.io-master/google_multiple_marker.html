@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Maps API 叢集標記範例</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5_SjUbRXayyiYVb9QaQSlRUW6CSM5Io"></script>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+</head>
+<body>
+  <div id="map" style="width: 800px; height: 600px;"></div>
+
+  <script>
+    const locations = [
+      { lat: 25.048787, lng: 121.517071 },
+      { lat: 25.047665, lng: 121.516999 },
+      { lat: 25.046453, lng: 121.515570 },
+      { lat: 25.046973, lng: 121.513635 },
+      { lat: 25.047964, lng: 121.513700 },
+      { lat: 25.048859, lng: 121.515784 },
+      { lat: 25.048933, lng: 121.518045 },
+      { lat: 25.049507, lng: 121.520085 },
+      { lat: 25.049366, lng: 121.522050 },
+      { lat: 25.049025, lng: 121.523706 },
+      { lat: 25.048570, lng: 121.525523 },
+      { lat: 25.048302, lng: 121.526950 },
+      { lat: 25.048008, lng: 121.528019 },
+      { lat: 25.047552, lng: 121.528902 },
+      { lat: 25.046926, lng: 121.529306 },
+      { lat: 25.045937, lng: 121.529306 },
+      { lat: 25.044963, lng: 121.528874 },
+      { lat: 25.043936, lng: 121.527785 },
+      { lat: 25.043457, lng: 121.526359 },
+      { lat: 25.042977, lng: 121.524439 }
+    ];
+
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: { lat: 25.046431525811414, lng: 121.51747250593631 }
+      });
+
+      // 創建標記
+      const markers = locations.map((position, i) => {
+        return new google.maps.Marker({
+          position,
+          label: `${i + 1}` // 使用數字作為標記的標籤
+        });
+      });
+
+      // 創建叢集標記
+      const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+    }
+
+    // 載入地圖
+    initMap();
+  </script>
+</body>
+</html>

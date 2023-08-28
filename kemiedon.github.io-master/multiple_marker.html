@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map {
+            width: 800px;
+            height: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3ibLlgXbJl05AwpK60IBpgx5SfmdtYR0&callback=initMap"></script>
+    <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+    <script>
+        
+        function initMap() {
+            const taipei_city = { lat: 25.046531856453857, lng: 121.5175407251969 };
+                // The map, centered at Uluru
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 15,
+                center: taipei_city,
+            });
+            const img = "img/placeholder.png"
+            for(let i = 0; i < locations.length; i++){
+                const marker = new google.maps.Marker({
+                    position: locations[i],
+                    map: map,
+                    title: pos_name[i],
+                    icon: img
+                });
+                const infowindow = new google.maps.InfoWindow({
+                    content: pos_name[i],
+                    ariaLabel: pos_name[i],
+                });
+                
+                marker.addListener("click", () => {
+                    infowindow.open({
+                    anchor: marker,
+                    map,
+                    });
+                });
+            }
+               
+        }
+        const pos_name = ["臺北市國父史蹟館(逸仙公園)","台北車站","臺北京站威秀影城","台北國際藝術村","國立臺灣博物館鐵道部園區","中央藝文公園"]
+        const locations = [
+            { lat: 25.04823283448567, lng: 121.52012637449823 },
+            { lat: 25.046531856453857, lng: 121.5175407251969 },
+            { lat: 25.04920481133701, lng: 121.51857069338332 },
+            { lat: 25.04722197037988, lng: 121.52229359930621 },
+            { lat: 25.049049295548183, lng: 121.51140383126967 },
+            { lat: 25.04632773742552, lng: 121.52680733526272 }
+            
+        ];
+
+            window.initMap = initMap;
+
+    </script>
+</body>
+</html>
