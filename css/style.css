@@ -84,7 +84,7 @@
 
 .top-text p{
     margin-top: 90px;
-    width: 405px;
+    max-width: 405px;
 }
 
 .btn-div{
@@ -173,7 +173,7 @@
 
 .bot-text p{
     margin-top: 90px;
-    width: 405px;
+    max-width: 405px;
 }
 
 .btn-div{
